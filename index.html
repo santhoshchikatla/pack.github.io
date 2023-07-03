@@ -21,8 +21,8 @@
     <section class="header">
       <nav>
         <a href="index.html"><img src="images/logo.png" alt="" /></a>
-        <div class="nav-links" id="navlinks">
-          <i class="fa fa-window-close" onclick="hidemenu"></i>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-window-close" onclick="hideMenu"></i>
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -30,9 +30,9 @@
             <li><a href="">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-          <i class="fa fa-bars" onclick="showmenu"></i>
+          
         </div>
-        <i class="fa fa-bars" onclick="showmenu"></i>
+        <i class="fa fa-bars" onclick="showMenu"></i>
       </nav>
       <div class="text-box">
         <h1>World's Biggest university</h1>
@@ -212,12 +212,12 @@
 
     <!-----javascript---->
     <script>
-      var NavLinks = document.getElementById("navlinks");
-      function showmenu() {
-        NavLinks.style.right = "0";
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
       }
-      function hidemenu() {
-        NavLinks.style.right = "-200px";
+      function hideMenu() {
+        navLinks.style.right = "-200px";
       }
     </script>
   </body>
